@@ -1,0 +1,61 @@
+﻿@model TIDSolutions.Models.Auto
+
+@{
+    ViewData["Title"] = "Dettalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Dettalles</h1>
+
+<div>
+    <h4>Auto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fabricacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fabricacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Propietario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Propietario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Inspeccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Inspeccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Disponible)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Disponible)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Editar" class="btn btn-warning"  asp-route-id="@Model?.Placa">Edit</a> 
+    <a asp-action="Listar" class="btn btn-secondary">Back to List</a>
+</div>
